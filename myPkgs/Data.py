@@ -6,9 +6,16 @@ class Path:
     driver = "myData/chromedriver.exe"
     profile = os.getcwd()+"/myData/chromeProfile/"
 
+    infoList="myData/infoList.pickle"
+    infoDictList="myData/infoDictList.pickle"
+    infoListAdjusted="myData/infoListAdjusted.pickle"
+    newArrival="myData/newArrival.pickle"
 
-class Config:
-    email = "ichir0roie@gmail.com"
+    emailTargetFile="myData/emailTarget.txt"
+
+    templateHeader="Template/header.html"
+    templateItem="Template/item.html"
+    templateFooter="Template/Footer.html"
 
 
 class Scrap:
@@ -26,8 +33,30 @@ class Scrap:
 
     subscriptionsSize="/html/body/div[2]/div/div/div/div[1]/span"
 
+    baseUrl="https://mangasee123.com"
+
 class Const:
+
     title="title"
     latest="latest"
     latestDate="latestDate"
     lastRead="lastRead"
+
+    linkTitle="linkTitle"
+    linkLatest="linkLatest"
+    linkLastRead="lastRead"
+
+    class Email:
+        subject="manga see feed."
+
+        mailServer="smtp.gmail.com:587"
+
+class Info:
+    title=None
+    latest=None
+    lastRead=None
+    latestDate=None
+
+    linkTitle=None
+    linkLatest=None
+    linkLastRead=None
