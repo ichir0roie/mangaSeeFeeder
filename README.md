@@ -10,3 +10,6 @@
 + 対応のchromedriver.exe
 + setLogin.pyの実行
 + main.pyの実行
+
+# this place
+[this](https://github.com/ichir0roie/mangaSeeFeeder)
