@@ -6,7 +6,8 @@ createDirs = [
 ]
 
 createFiles = [
-    "myData/chromeProfie.exe is this.txt"
+    "myData/chromeProfie.exe is this.txt",
+    "myData/emailTarget.txt"
 ]
 
 for path in createDirs:
@@ -17,3 +18,8 @@ for path in createFiles:
     if not os.path.exists(path):
         with open(path, mode="w", encoding="utf-8")as f:
             f.write("")
+            if path =="myData/emailTarget.txt":
+                f.write("email,password")
+
+
+
